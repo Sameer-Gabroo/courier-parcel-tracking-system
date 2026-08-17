@@ -2,143 +2,110 @@
 
 ## 1. Project Overview
 
-I have gone through the project requirements and understood the main features and technologies that need to be used for the Courier Parcel Tracking System.
+I have gone through the project requirements and understood the main features of the Courier Parcel Tracking System.
 
-**Technology Stack:**
+### Technology
 
-* Backend: ASP.NET Core 8 Web API
-* Frontend: ReactJS
-* Database: Microsoft SQL Server
-* Authentication: JWT
-* API Documentation: Swagger/OpenAPI
-* API Testing: Postman
-* Data Access: Entity Framework Core
+- Backend: ASP.NET Core 8 Web API
+- Frontend: ReactJS
+- Database: SQL Server
+- Authentication: JWT
+- Data Access: Entity Framework Core
+- API Testing: Swagger and Postman
 
-## 2. Objective
+## 2. Main Features
 
-After going through the documentation, I understand that the system should provide the following features:
+The system will include:
 
-1. User login with JWT-based authentication.
-2. Role-based authorization.
-3. Customer, courier, hub, and route management.
-4. Parcel booking and tracking-number generation.
-5. Parcel status and hub-event tracking.
-6. Customer parcel tracking and history.
-7. Dashboard with summary information and at least one chart.
-8. Search, sorting, filtering, and server-side pagination.
-9. Frontend and backend validation.
-10. Soft delete, active/inactive status, audit fields, and audit logging.
-11. Global exception handling and structured application logging.
-12. Swagger/OpenAPI documentation and a Postman collection.
-13. Local delivery-delay risk evaluation with a score and explanation.
+- User login and role-based access
+- Customer, courier, hub and route management
+- Parcel booking
+- Tracking number generation
+- Parcel status and tracking history
+- Dashboard
+- Search, filtering and pagination
+- Validation and error handling
+- Delivery-delay risk feature
+- Audit and soft-delete functionality
 
+# Implementation Plan
 
-## Implementation Timeline
+## Day 1 — Planning and Database Design
 
-### Day 1 — Database Design and Project Planning
+- Go through the requirements.
+- Decide the tables and relationships.
+- Create the ERD.
+- Create basic wireframes.
+- Start the project setup.
+- Create the C# entities and configure EF Core.
+- Use EF Core migrations to create the database.
 
-Today I plan to work on the initial database design.
+## Day 2 — Authentication
 
+- Create user login.
+- Add password hashing.
+- Implement JWT authentication.
+- Add roles and role-based authorization.
+- Create the initial Admin user.
 
+## Day 3 — Backend APIs
 
-* Go through the requirements again.
-* Create the ERD.
-* Create basic wireframes for the main screens.
-* Decide the database tables and their relationships.
-* Decide the required primary keys and foreign keys.
+Create APIs for:
 
-### Day 2 — JWT and Role Authorization
+- Customers
+- Hubs
+- Couriers
+- Routes
 
-On Tuesday, I plan to work on authentication and authorization.
+Also add basic validation, search and pagination.
 
+## Day 4 — React Frontend
 
-* Create the login functionality.
-* Implement password hashing.
-* Generate JWT tokens.
-* Validate JWT tokens in protected APIs.
-* Implement role-based authorization.
+Start the main React screens:
 
+- Customers
+- Hubs
+- Couriers
+- Routes
 
-### Day 3 —  Data APIs
+Connect the screens with the backend APIs.
 
-On Wednesday, I plan to create the CRUD APIs for:
+## Day 5 — Forms and API Integration
 
-* Customers
-* Hubs
-* Couriers
-* Routes
+- Create and edit forms.
+- Add frontend validation.
+- Connect forms with APIs.
+- Add search, filtering and pagination.
 
-I will also work on:
+## Day 6 — Parcel Booking
 
-* DTOs
-* Validation
-* Service layer
-* Repository/data access
-* Search
-* Sorting
-* Server-side pagination
+- Create parcel booking.
+- Generate tracking number.
+- Select customer.
+- Select origin and destination hubs.
+- Select route.
+- Assign courier.
+- Add parcel status.
 
-I will test the APIs using Swagger while developing them.
+## Day 7 — Parcel Tracking
 
-### Day 4 —  Data Frontend
+- Create status events.
+- Add hub/status updates.
+- Show parcel history.
+- Create tracking page.
+- Test the complete parcel journey.
 
-On Thursday, I will start working on the React frontend.
+## Day 8 — Delivery Risk Feature
 
-Since I am still getting familiar with React, I will spend some time understanding the React topics needed for the project while also starting the actual screens.
+- Study the required AI/ML approach.
+- Implement the delivery-delay risk feature.
+- Add risk score and explanation.
+- Test and fix issues.
 
-Initial screens:
+## Day 9 — Testing and Final Review
 
-* Customers
-* Hubs
-* Couriers
-* Routes
-
-
-### Day 5 — Frontend Forms and API Integration
-
-On Friday, I will continue the React work.
-
-I plan to add:
-
-* Create/edit forms
-* Frontend validation
-* API integration
-
-
-### Day 6 — Parcel Booking Workflow
-
-On Monday, I will start working on the main parcel workflow.
-
-* Parcel creation
-* Tracking-number generation
-* Customer selection
-* Origin hub selection
-* Destination hub selection
-* Route selection
-* Courier assignment where required
-* Parcel status
-* Backend validation
-
-
-### Day 7 — Parcel Tracking and Status History
-
-On Tuesday, I will work on the tracking functionality.
-
-* Create StatusEvents.
-* Add hub/status updates.
-* Create parcel history.
-* Create customer tracking page.
-* Create transaction detail screen.
-* Create tracking API.
-* Test the complete parcel journey from booking to delivery.
-
-### Day 8 — AI Feature and Debugging
-
-I will work on the delivery-delay risk feature.
-
-I will study the required local AI/ML approach and implement the delivery-delay risk feature based on the project requirements. I will document the selected approach, inputs, scoring/model logic, and limitations.
-
-### Day 9 — Final Testing and Demo Preparation
-
-On the final day, I will focus on completing and reviewing the project.
-
+- Test the complete application.
+- Fix remaining issues.
+- Test APIs using Swagger/Postman.
+- Update documentation.
+- Prepare the project for demo.
