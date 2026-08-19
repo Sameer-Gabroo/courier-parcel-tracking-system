@@ -1,0 +1,95 @@
+Project folder structure 
+
+src/
+│
+├── components/
+│   ├── common/
+│   ├── dashboard/
+│   ├── layout/
+│   └── parcel-management/
+│
+├── pages/
+│   ├── authentication/
+│   │   └── Login.jsx
+│   │
+│   ├── dashboard/
+│   │   └── Dashboard.jsx
+│   │
+│   ├── parcel-management/
+│   │   ├── ParcelList.jsx
+│   │   ├── ParcelCreate.jsx
+│   │   └── ParcelDetails.jsx
+│   │
+│   ├── tracking/
+│   │   └── TrackingHistory.jsx
+│   │
+│   ├── customer-management/
+│   │   ├── CustomerList.jsx
+│   │   └── CustomerForm.jsx
+│   │
+│   ├── hub-management/
+│   │   └── HubList.jsx
+│   │
+│   ├── route-management/
+│   │   └── RouteList.jsx
+│   │
+│   ├── user-management/
+│   │   └── UserManagement.jsx
+│   │
+│   ├── role-management/
+│   │   └── RoleManagement.jsx
+│   │
+│   ├── delivery-risk/
+│   │   └── DeliveryRiskAnalysis.jsx
+│   │
+│   └── errors/
+│       ├── Unauthorized.jsx
+│       ├── NotFound.jsx
+│       └── Error.jsx
+│
+├── services/
+├── routes/
+├── context/
+└── App.jsx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Admin
+    → Everything
+
+Booking Agent
+    → Dashboard
+    → Parcels
+    → Customers
+
+Dispatcher
+    → Dashboard
+    → Parcels
+    → Hubs
+    → Routes
+    → Tracking
+
+Courier
+    → Dashboard
+    → My Parcels
+    → Tracking
+
+Customer Viewer
+    → Dashboard
+    → Track Parcel
