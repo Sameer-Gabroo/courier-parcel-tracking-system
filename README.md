@@ -1,7 +1,81 @@
 # courier-parcel-tracking-system
 
 
+# Courier Parcel Tracking System
 
+A full-stack courier parcel tracking platform built with
+ASP.NET Core Web API, ReactJS, and SQL Server.
+
+## 🚀 Features
+
+- User registration and authentication
+- JWT-based authentication
+- Role-based authorization
+- Parcel creation and management
+- Parcel tracking
+- Parcel status updates
+- Admin management
+- RESTful APIs
+- Global exception handling
+- Database persistence with SQL Server
+- Responsive React frontend
+
+## 🛠️ Technologies
+
+### Backend
+- C#
+- ASP.NET Core Web API
+- Entity Framework Core
+- SQL Server
+- JWT
+- REST API
+
+### Frontend
+- ReactJS
+- JavaScript
+- HTML
+- CSS
+
+### Tools
+- Git
+- GitLab
+- GitHub
+- Visual Studio
+- VS Code
+
+## 🏗️ Architecture
+
+[Architecture diagram]
+
+## 🗄️ Database Design
+
+[ERD]
+
+## 📸 Screenshots
+
+[Application screenshots]
+
+## ⚙️ Installation
+
+### Backend
+
+...
+
+### Frontend
+
+...
+
+## 🔐 Authentication
+
+The application uses JWT authentication and role-based authorization.
+
+## 📚 API Documentation
+
+...
+
+## 👨‍💻 Author
+
+Sameer Ali
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
