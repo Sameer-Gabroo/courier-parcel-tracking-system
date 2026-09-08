@@ -49,7 +49,8 @@ ASP.NET Core Web API, ReactJS, and SQL Server.
 
 ## 🗄️ Database Design
 
-[ERD]
+<img width="1357" height="908" alt="image" src="https://github.com/user-attachments/assets/6c64c155-ca20-4d67-a449-e9667f71584b" />
+
 
 ## 📸 Screenshots
 
