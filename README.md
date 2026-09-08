@@ -43,18 +43,13 @@ ASP.NET Core Web API, ReactJS, and SQL Server.
 - Visual Studio
 - VS Code
 
-## 🏗️ Architecture
 
-[Architecture diagram]
 
 ## 🗄️ Database Design
 
 <img width="1357" height="908" alt="image" src="https://github.com/user-attachments/assets/6c64c155-ca20-4d67-a449-e9667f71584b" />
 
 
-## 📸 Screenshots
-
-[Application screenshots]
 
 ## ⚙️ Installation
 
