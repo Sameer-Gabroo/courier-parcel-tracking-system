@@ -1,0 +1,136 @@
+/* =========================
+   Dashboard Page
+========================= */
+
+.dashboard-page {
+    min-height: 100%;
+    padding: 8px 0 32px;
+}
+
+
+/* =========================
+   Dashboard Header
+========================= */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.dashboard-title {
+    margin: 0 0 8px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1f2937;
+    letter-spacing: -0.7px;
+}
+
+.dashboard-subtitle {
+    margin: 0;
+    font-size: 15px;
+    color: #6b7280;
+}
+
+
+/* =========================
+   Dashboard Badge
+========================= */
+
+.dashboard-badge {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 10px 16px;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard-badge-dot {
+    width: 8px;
+    height: 8px;
+
+    background: #22c55e;
+    border-radius: 50%;
+
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.12);
+}
+
+
+/* =========================
+   Summary Cards
+========================= */
+
+.dashboard-summary {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   Dashboard Sections
+========================= */
+
+.dashboard-section {
+    margin-top: 28px;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 992px) {
+
+    .dashboard-header {
+        margin-bottom: 24px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .dashboard-page {
+        padding: 0 0 24px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+
+        margin-bottom: 24px;
+        padding-bottom: 20px;
+    }
+
+    .dashboard-title {
+        font-size: 26px;
+    }
+
+    .dashboard-subtitle {
+        font-size: 14px;
+    }
+
+    .dashboard-badge {
+        padding: 9px 14px;
+    }
+
+    .dashboard-section {
+        margin-top: 24px;
+    }
+
+}

@@ -1,0 +1,166 @@
+.summary-card {
+    --card-accent: #2563eb;
+    --card-accent-soft: #eff6ff;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 154px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e7edf5;
+    border-radius: 18px;
+    padding: 25px 24px 24px 27px;
+    isolation: isolate;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.045);
+
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        border-color 180ms ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+    border-color: color-mix(in srgb, var(--card-accent) 28%, #e7edf5);
+    box-shadow: 0 16px 28px rgba(15, 23, 42, 0.1);
+}
+
+.summary-card::after {
+    position: absolute;
+    z-index: -1;
+    top: -42px;
+    right: -36px;
+    width: 122px;
+    height: 122px;
+    content: "";
+    background: var(--card-accent-soft);
+    border-radius: 50%;
+    opacity: 0.55;
+}
+
+.summary-card-accent {
+    position: absolute;
+    top: 22px;
+    bottom: 22px;
+    left: 0;
+    width: 4px;
+    background: var(--card-accent);
+    border-radius: 0 4px 4px 0;
+}
+
+/* =========================
+   Card Content
+========================= */
+
+.summary-card-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.summary-card-title {
+    margin: 0 0 9px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #64748b;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.summary-card-value {
+    margin: 0 0 10px;
+    font-size: clamp(1.85rem, 2.4vw, 2.25rem);
+    font-weight: 750;
+    line-height: 1;
+    color: #172033;
+    letter-spacing: -0.055em;
+    font-variant-numeric: tabular-nums;
+}
+
+.summary-card-description {
+    margin: 0;
+    max-width: 180px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #7a8799;
+}
+
+/* =========================
+   Icon
+========================= */
+
+.summary-card-icon {
+    flex: 0 0 auto;
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid color-mix(in srgb, var(--card-accent) 13%, transparent);
+    border-radius: 15px;
+    font-size: 23px;
+    box-shadow: 0 7px 16px color-mix(in srgb, var(--card-accent) 13%, transparent);
+}
+
+/* =========================
+   Card Types
+========================= */
+
+.summary-card.total .summary-card-icon {
+    background: var(--card-accent-soft);
+    color: var(--card-accent);
+}
+
+.summary-card.transit {
+    --card-accent: #d97706;
+    --card-accent-soft: #fff8e8;
+}
+
+.summary-card.delivered {
+    --card-accent: #159767;
+    --card-accent-soft: #ecfdf4;
+}
+
+.summary-card.delayed {
+    --card-accent: #dc3f50;
+    --card-accent-soft: #fff1f3;
+}
+
+.summary-card.transit .summary-card-icon,
+.summary-card.delivered .summary-card-icon,
+.summary-card.delayed .summary-card-icon {
+    background: var(--card-accent-soft);
+    color: var(--card-accent);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+    .summary-card {
+        min-height: 140px;
+        padding: 21px 20px 20px 24px;
+    }
+
+    .summary-card-value {
+        font-size: 1.75rem;
+    }
+
+    .summary-card-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 21px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .summary-card {
+        transition: none;
+    }
+}

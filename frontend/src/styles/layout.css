@@ -1,0 +1,356 @@
+/* =========================================================
+   HEADER
+========================================================= */
+
+.app-header {
+    min-height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 32px;
+
+    background: #F8FAFC;
+    color: #0F172A;
+
+    border-bottom: 1px solid #E2E8F0;
+
+    box-shadow: 0 1px 4px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =========================================================
+   HEADER LAYOUT
+========================================================= */
+
+.header-brand,
+.header-actions,
+.header-user {
+    display: flex;
+    align-items: center;
+}
+
+.header-brand {
+    gap: 12px;
+}
+
+.header-actions {
+    gap: 20px;
+}
+
+.header-user {
+    gap: 10px;
+}
+
+
+/* =========================================================
+   HEADER LOGO
+========================================================= */
+
+.header-logo {
+    display: grid;
+
+    width: 42px;
+    height: 42px;
+
+    place-items: center;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 11px;
+
+    background: #FFFFFF;
+    color: #334155;
+
+    font-size: 22px;
+}
+
+
+/* =========================================================
+   BRAND TEXT
+========================================================= */
+
+.header-brand-text,
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-brand-text h1 {
+    margin: 0;
+
+    color: #0F172A;
+
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+}
+
+.header-brand-text span {
+    color: #64748B;
+    font-size: 0.72rem;
+}
+
+
+/* =========================================================
+   USER
+========================================================= */
+
+.user-name {
+    color: #0F172A;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.user-role {
+    color: #64748B;
+
+    font-size: 0.72rem;
+}
+
+
+/* =========================================================
+   USER AVATAR
+========================================================= */
+
+.user-avatar {
+    display: grid;
+
+    width: 38px;
+    height: 38px;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #E2E8F0;
+    color: #334155;
+
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   LOGOUT BUTTON
+========================================================= */
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 9px 13px;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+
+    background: #FFFFFF;
+    color: #334155;
+
+    font-weight: 700;
+
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.logout-button:hover {
+    background: #F1F5F9;
+    border-color: #94A3B8;
+    color: #0F172A;
+
+    box-shadow: 0 3px 8px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.app-sidebar {
+    width: 258px;
+    flex: 0 0 258px;
+
+    min-height: calc(100vh - 76px);
+
+    padding: 24px 14px;
+
+    background: #172033;
+    color: #FFFFFF;
+
+    border-right: 1px solid #263247;
+}
+
+
+/* =========================================================
+   SIDEBAR SECTION TITLES
+========================================================= */
+
+.sidebar-title {
+    margin: 4px 10px 12px;
+
+    color: #94A3B8;
+
+    font-size: 0.68rem;
+    font-weight: 800;
+
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   SIDEBAR NAVIGATION
+========================================================= */
+
+.sidebar-nav {
+    gap: 4px;
+}
+
+
+/* =========================================================
+   SIDEBAR LINKS
+========================================================= */
+
+.sidebar-link {
+    position: relative;
+
+    display: flex !important;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 10px 12px !important;
+
+    border-radius: 8px !important;
+
+    color: #CBD5E1 !important;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition:
+        background-color 0.18s ease,
+        color 0.18s ease;
+}
+
+
+/* =========================================================
+   SIDEBAR ICONS
+========================================================= */
+
+.sidebar-link svg {
+    width: 18px;
+    height: 18px;
+
+    flex-shrink: 0;
+
+    color: #94A3B8;
+
+    transition: color 0.18s ease;
+}
+
+
+/* =========================================================
+   SIDEBAR HOVER
+========================================================= */
+
+.sidebar-link:hover {
+    background: #222D40 !important;
+    color: #FFFFFF !important;
+}
+
+.sidebar-link:hover svg {
+    color: #FFFFFF;
+}
+
+
+/* =========================================================
+   ACTIVE SIDEBAR ITEM
+========================================================= */
+
+.sidebar-link.active {
+    background: #334155 !important;
+    color: #FFFFFF !important;
+
+    box-shadow: none;
+}
+
+
+/* Professional green active indicator */
+
+.sidebar-link.active::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 7px;
+    bottom: 7px;
+
+    width: 3px;
+
+    border-radius: 0 3px 3px 0;
+
+    background: #10B981;
+}
+
+.sidebar-link.active svg {
+    color: #FFFFFF;
+}
+
+
+/* =========================================================
+   SIDEBAR DIVIDER
+========================================================= */
+
+.sidebar-divider {
+    border-color: rgba(203, 213, 225, 0.10);
+
+    margin: 22px 10px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    .app-header {
+        min-height: 64px;
+        padding: 0 16px;
+    }
+
+    .header-brand-text span,
+    .user-info,
+    .logout-button span {
+        display: none;
+    }
+
+    .app-sidebar {
+        width: 68px;
+        flex-basis: 68px;
+
+        padding: 18px 10px;
+    }
+
+    .sidebar-title,
+    .sidebar-link span {
+        display: none;
+    }
+
+    .sidebar-link {
+        justify-content: center;
+        padding: 12px !important;
+    }
+
+    .sidebar-link.active::before {
+        top: 9px;
+        bottom: 9px;
+    }
+}

@@ -1,0 +1,17 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# .NET
+bin/
+obj/
+
+# Node.js
+node_modules/
+dist/
+
+# Environment variables
+.env
+.env.*
+!.env.example

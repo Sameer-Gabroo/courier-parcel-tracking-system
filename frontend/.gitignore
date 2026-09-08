@@ -1,95 +1,17 @@
-Project folder structure 
+# Dependencies and package-manager files
+node_modules/
+.npm/
 
-src/
-│
-├── components/
-│   ├── common/
-│   ├── dashboard/
-│   ├── layout/
-│   └── parcel-management/
-│
-├── pages/
-│   ├── authentication/
-│   │   └── Login.jsx
-│   │
-│   ├── dashboard/
-│   │   └── Dashboard.jsx
-│   │
-│   ├── parcel-management/
-│   │   ├── ParcelList.jsx
-│   │   ├── ParcelCreate.jsx
-│   │   └── ParcelDetails.jsx
-│   │
-│   ├── tracking/
-│   │   └── TrackingHistory.jsx
-│   │
-│   ├── customer-management/
-│   │   ├── CustomerList.jsx
-│   │   └── CustomerForm.jsx
-│   │
-│   ├── hub-management/
-│   │   └── HubList.jsx
-│   │
-│   ├── route-management/
-│   │   └── RouteList.jsx
-│   │
-│   ├── user-management/
-│   │   └── UserManagement.jsx
-│   │
-│   ├── role-management/
-│   │   └── RoleManagement.jsx
-│   │
-│   ├── delivery-risk/
-│   │   └── DeliveryRiskAnalysis.jsx
-│   │
-│   └── errors/
-│       ├── Unauthorized.jsx
-│       ├── NotFound.jsx
-│       └── Error.jsx
-│
-├── services/
-├── routes/
-├── context/
-└── App.jsx
+# Production builds and tooling caches
+dist/
+.vite/
+coverage/
 
+# Environment-specific configuration
+.env
+.env.*
+!.env.example
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Admin
-    → Everything
-
-Booking Agent
-    → Dashboard
-    → Parcels
-    → Customers
-
-Dispatcher
-    → Dashboard
-    → Parcels
-    → Hubs
-    → Routes
-    → Tracking
-
-Courier
-    → Dashboard
-    → My Parcels
-    → Tracking
-
-Customer Viewer
-    → Dashboard
-    → Track Parcel
+# Editor and OS files
+.DS_Store
+*.local

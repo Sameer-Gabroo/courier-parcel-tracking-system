@@ -1,0 +1,11 @@
+.login-page { display: grid; min-height: 100vh; place-items: center; padding: 24px; background: radial-gradient(circle at 15% 15%, #dce5ff 0, transparent 31%), radial-gradient(circle at 90% 85%, #d6f5ec 0, transparent 27%), #f5f7fb; }
+.login-card { width: min(100%, 430px); overflow: hidden; border: 1px solid rgba(213,222,239,.9); border-radius: 20px; background: rgba(255,255,255,.94); box-shadow: 0 24px 60px rgba(28,45,88,.13); }
+.login-card-body { padding: 42px 38px 38px; }
+.login-logo { display: grid; width: 54px; height: 54px; margin: 0 auto 18px; place-items: center; border-radius: 16px; background: linear-gradient(145deg, #3158d4, #5679e5); color: #fff; font-size: 27px; box-shadow: 0 10px 20px rgba(49,88,212,.25); }
+.login-title { margin-bottom: 6px; font-size: 1.55rem; font-weight: 800; letter-spacing: -.04em; }
+.login-subtitle { margin: 0; color: var(--muted); }
+.input-with-icon { position: relative; }
+.input-with-icon > svg { position: absolute; z-index: 1; top: 50%; left: 13px; color: #8290a7; transform: translateY(-50%); }
+.input-with-icon .form-control { padding-left: 40px; }
+.login-submit { min-height: 45px; margin-top: 6px; }
+@media (max-width: 440px) { .login-card-body { padding: 34px 24px 28px; } }

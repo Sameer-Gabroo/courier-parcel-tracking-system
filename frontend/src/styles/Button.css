@@ -1,0 +1,185 @@
+/* =========================================================
+   PARCEL TABLE ACTIONS
+========================================================= */
+
+.parcel-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+
+/* =========================================================
+   ICON BUTTON
+========================================================= */
+
+.parcel-icon-btn {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    width: 32px !important;
+    height: 32px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border: 0 !important;
+    outline: 0;
+
+    background: transparent !important;
+
+    border-radius: 6px !important;
+
+    color: #64748B !important;
+
+    cursor: pointer;
+
+    box-shadow: none !important;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.parcel-icon-btn svg {
+    width: 17px !important;
+    height: 17px !important;
+
+    display: block;
+
+    stroke: currentColor;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.parcel-icon-btn:hover {
+    color: #334155 !important;
+
+    background: #F1F5F9 !important;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   FOCUS
+========================================================= */
+
+.parcel-icon-btn:focus {
+    outline: none !important;
+}
+
+.parcel-icon-btn:focus-visible {
+    outline: 2px solid #CBD5E1 !important;
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   ACTION COLUMN
+========================================================= */
+
+.parcel-actions {
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   PARCEL STATUS BADGES
+========================================= */
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px 11px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    border: 1px solid transparent;
+}
+
+
+/* Pending */
+
+.status-badge.pending {
+    background: #f1f5f9;
+    color: #475569;
+    border-color: #cbd5e1;
+}
+
+
+/* Assigned */
+
+.status-badge.assigned {
+    background: #eff6ff;
+    color: #2563eb;
+    border-color: #bfdbfe;
+}
+
+
+/* Picked Up */
+
+.status-badge.picked-up {
+    background: #f5f3ff;
+    color: #7c3aed;
+    border-color: #ddd6fe;
+}
+
+
+/* In Transit */
+
+.status-badge.in-transit {
+    background: #eef2ff;
+    color: #4f46e5;
+    border-color: #c7d2fe;
+}
+
+
+/* Out for Delivery */
+
+.status-badge.out-for-delivery {
+    background: #fff7ed;
+    color: #ea580c;
+    border-color: #fed7aa;
+}
+
+
+/* Delivered */
+
+.status-badge.delivered {
+    background: #ecfdf5;
+    color: #059669;
+    border-color: #a7f3d0;
+}
+
+
+/* Unknown / fallback */
+
+.status-badge.default {
+    background: #f8fafc;
+    color: #64748b;
+    border-color: #e2e8f0;
+}

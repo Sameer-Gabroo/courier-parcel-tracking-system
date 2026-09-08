@@ -1,0 +1,188 @@
+.app-header {
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 34px;
+
+    background: #2a60c5;
+
+    border-bottom: 1px solid #4267b5;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   Brand
+========================= */
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-logo {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 12px;
+
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.header-brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-brand-text h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.header-brand-text span {
+    margin-top: 2px;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 12px;
+}
+
+/* =========================
+   Right Actions
+========================= */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.header-icon-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* =========================
+   User
+========================= */
+
+.header-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #2563eb;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user-role {
+    margin-top: 2px;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 12px;
+}
+
+/* =========================
+   Logout
+========================= */
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 10px 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 9px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.logout-button:hover {
+    background: #ffffff;
+    color: #2563eb;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+    .app-header {
+        height: 68px;
+        padding: 0 16px;
+    }
+
+    .header-brand-text span,
+    .user-info,
+    .logout-button span {
+        display: none;
+    }
+
+    .header-actions {
+        gap: 10px;
+    }
+
+    .header-brand-text h1 {
+        font-size: 16px;
+    }
+
+    .logout-button {
+        padding: 10px;
+    }
+}

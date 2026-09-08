@@ -1,0 +1,348 @@
+.dashboard-page { padding-bottom: 28px; }
+.dashboard-header { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 28px; }
+.dashboard-title { margin: 0 0 7px; color: var(--ink); font-size: clamp(1.6rem, 3vw, 2rem); font-weight: 800; letter-spacing: -.04em; }
+.dashboard-subtitle { margin: 0; color: var(--muted); }
+.dashboard-badge { display: flex; align-items: center; gap: 8px; padding: 9px 13px; border: 1px solid #d8e7dd; border-radius: 999px; background: #f5fcf8; color: #237650; font-size: .8rem; font-weight: 700; }
+.dashboard-badge-dot { width: 7px; height: 7px; border-radius: 50%; background: #25a56b; box-shadow: 0 0 0 4px rgba(37,165,107,.12); }
+.dashboard-section { margin-top: 26px; }
+.chart-container { width: 100%; height: 300px; }
+.summary-card { --card-accent: #3158d4; --card-accent-soft: #edf1ff; position: relative; display: flex; justify-content: space-between; min-height: 144px; overflow: hidden; padding: 23px; border: 1px solid var(--line); border-radius: 16px; background: #fff; box-shadow: 0 8px 24px rgba(24,38,68,.05); transition: transform .18s ease, box-shadow .18s ease; }
+.summary-card:hover { transform: translateY(-3px); box-shadow: 0 14px 26px rgba(24,38,68,.1); }
+.summary-card-accent { position: absolute; top: 20px; bottom: 20px; left: 0; width: 4px; border-radius: 0 4px 4px 0; background: var(--card-accent); }
+.summary-card-title { margin: 0 0 10px; color: var(--muted); font-size: .69rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.summary-card-value { margin: 0 0 8px; font-size: 2.1rem; font-weight: 800; letter-spacing: -.06em; }
+.summary-card-description { margin: 0; color: #7a879a; font-size: .82rem; }
+.summary-card-icon { display: grid; width: 50px; height: 50px; place-items: center; border-radius: 14px; background: var(--card-accent-soft); color: var(--card-accent); font-size: 22px; }
+.summary-card.transit { --card-accent: #c67b13; --card-accent-soft: #fff5e4; }
+.summary-card.delivered { --card-accent: #168b61; --card-accent-soft: #e9fbf3; }
+.summary-card.delayed { --card-accent: #c54252; --card-accent-soft: #fff0f2; }
+/* =========================================
+   CHART + AI PREDICTOR
+========================================= */
+
+.dashboard-chart-ai {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+
+/* Remove unnecessary spacing from
+   the sections inside this layout */
+
+.dashboard-chart-ai .dashboard-section {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   CHART PANEL
+========================================= */
+
+.chart-panel {
+    min-width: 0;
+}
+
+
+/* Make the chart card fit nicely
+   inside the half-width column */
+
+.chart-panel > * {
+    height: 100%;
+}
+
+
+/* =========================================
+   AI PREDICTOR
+========================================= */
+
+.ai-predictor-panel {
+    min-height: 420px;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+
+/* Header */
+
+.ai-predictor-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #edf1f7;
+}
+
+
+.ai-predictor-header h3 {
+    margin: 0;
+    color: #10213f;
+    font-size: 1.15rem;
+    font-weight: 750;
+}
+
+
+.ai-predictor-header p {
+    margin: 6px 0 0;
+    color: #71829d;
+    font-size: 0.82rem;
+}
+
+
+/* AI Icon */
+
+.ai-predictor-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 12px;
+
+    background: #eef4ff;
+    color: #3158d4;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   PREDICTION CONTENT
+========================================= */
+
+.ai-predictor-content {
+    padding-top: 20px;
+}
+
+
+/* Prediction rows */
+
+.ai-prediction-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #edf1f7;
+}
+
+
+.ai-prediction-label {
+    color: #64748b;
+    font-size: 0.86rem;
+}
+
+
+.ai-prediction-item strong {
+    color: #10213f;
+    font-size: 0.95rem;
+}
+
+
+/* Risk badge */
+
+.ai-risk-badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: #ecfdf5;
+    border: 1px solid #bbf7d0;
+
+    color: #16805c;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   AI MESSAGE
+========================================= */
+
+.ai-predictor-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin-top: 20px;
+    padding: 14px;
+
+    border-radius: 10px;
+
+    background: #f7f9fc;
+    border: 1px solid #e8edf5;
+}
+
+
+.ai-message-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 26px;
+    height: 26px;
+
+    border-radius: 50%;
+
+    background: #e8f8f1;
+    color: #12966c;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    flex-shrink: 0;
+}
+
+
+.ai-predictor-message p {
+    margin: 2px 0 0;
+
+    color: #64748b;
+
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   AI BUTTON
+========================================= */
+
+.ai-predictor-button {
+    width: 100%;
+
+    margin-top: 20px;
+    padding: 10px 16px;
+
+    border: 1px solid #3158d4;
+    border-radius: 9px;
+
+    background: #3158d4;
+    color: #ffffff;
+
+    font-size: 0.84rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.ai-predictor-button:hover {
+    background: #2649bd;
+
+    box-shadow: 0 6px 16px rgba(49, 88, 212, 0.22);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    .dashboard-chart-ai {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+    .ai-predictor-panel {
+        padding: 18px;
+    }
+
+    .ai-predictor-header h3 {
+        font-size: 1.05rem;
+    }
+
+}
+
+
+/* =========================================
+   RECENT PARCEL STATUS
+========================================= */
+
+.recent-status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px 11px;
+
+    border-radius: 20px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* Assigned - Blue */
+
+.recent-status-assigned {
+    background: #eef4ff;
+    color: #3158d4;
+    border: 1px solid #cddcff;
+}
+
+
+/* Out for Delivery - Orange */
+
+.recent-status-out-for-delivery {
+    background: #fff6e6;
+    color: #d97706;
+    border: 1px solid #fed7aa;
+}
+
+
+/* Delivered - Green */
+
+.recent-status-delivered {
+    background: #ecfdf5;
+    color: #059669;
+    border: 1px solid #bbf7d0;
+}
+
+
+/* Delayed - Red */
+
+.recent-status-delayed {
+    background: #fff1f2;
+    color: #dc3545;
+    border: 1px solid #fecdd3;
+}
+
+
+/* Other statuses */
+
+.recent-status-default {
+    background: #f1f5f9;
+    color: #64748b;
+    border: 1px solid #e2e8f0;
+}
+@media (max-width: 767.98px) { .dashboard-header { align-items: flex-start; flex-direction: column; margin-bottom: 22px; } .chart-container { height: 250px; } }
