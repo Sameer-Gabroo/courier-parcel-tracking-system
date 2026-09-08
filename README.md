@@ -1,5 +1,3 @@
-# courier-parcel-tracking-system
-
 
 # Courier Parcel Tracking System
 
